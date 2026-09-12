@@ -14,7 +14,7 @@ class Servidor:
 
         self.uri = f"ws://{self.ip}:{self.porta}?raw=true"
 
-        self.cam = cv2.VideoCapture(self.id_camera, cv2.CAP_DSHOW)
+        self.cam = cv2.VideoCapture(self.id_camera)
         self.cam.set(cv2.CAP_PROP_FRAME_WIDTH, self.resolucao_w)
         self.cam.set(cv2.CAP_PROP_FRAME_HEIGHT, self.resolucao_h)
 
